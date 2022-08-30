@@ -17,9 +17,9 @@ jobs:
      with:
        node-version: ${{ matrix.node-version }}
    - name: Install Packages
-     run: npx install   
+     run: npm install   
    - name: Build project
-     run: npx build
+     run: npm build
    - name: Upload production-ready build files
      uses: actions/upload-artifact@v2
      with:
